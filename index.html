@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="map.js"></script>
+    <script src="start.js"></script>
+    <script src="Gmail.js"></script>
+    <script src="auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmg8ah3XeV2EM2oYK6eukx_X4C6jM5jPI" async defer></script>
+    </script>
+  </head>
+  <body>
+    <div id="authorize-div">
+      <button id="authorize-button" onclick="authorize.handleAuthLogin(event)">
+        <!--When you login by pressing the button we start the auth process for the user.-->
+        Authorize
+      </button>
+    </div>
+    <div id="map"></div>  
+    <pre id="output"></pre>
+  </body>
+</html>
